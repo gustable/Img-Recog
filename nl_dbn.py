@@ -27,7 +27,7 @@ n_targets = labels_train.max() + 1
 
 net = DBN(
     [n_feat, n_feat / 3, n_targets],
-    epochs=1000,
+    epochs=100,
     learn_rates=0.01,
     learn_rate_decays=0.99,
     learn_rate_minimums=0.005,
