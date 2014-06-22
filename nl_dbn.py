@@ -8,12 +8,12 @@ def load(name):
     with open(name, 'rb') as f:
         return cPickle.load(f)
 
-dataset1 = load('/Home/gp/data/cifar-10-batches-py/data_batch_1')
-dataset2 = load('/Home/gp/data/cifar-10-batches-py/data_batch_2')
-dataset3 = load('/Home/gp/data/cifar-10-batches-py/data_batch_3')
-dataset4 = load('/Home/gp/data/cifar-10-batches-py/data_batch_4')
-dataset5 = load('/Home/gp/data/cifar-10-batches-py/data_batch_5')
-test_batch = load('/Home/gp/data/cifar-10-batches-py/test_batch')
+dataset1 = load('/home/gp/data/cifar-10-batches-py/data_batch_1')
+dataset2 = load('/home/gp/data/cifar-10-batches-py/data_batch_2')
+dataset3 = load('/home/gp/data/cifar-10-batches-py/data_batch_3')
+dataset4 = load('/home/gp/data/cifar-10-batches-py/data_batch_4')
+dataset5 = load('/home/gp/data/cifar-10-batches-py/data_batch_5')
+test_batch = load('/home/gp/data/cifar-10-batches-py/test_batch')
 
 data_train = np.vstack([dataset1['data'], dataset2['data'], dataset3['data'],dataset4['data'],dataset5['data']])
 labels_train = np.hstack([dataset1['labels'], dataset2['labels'],dataset3['labels'],dataset4['labels'],dataset5['labels']])
